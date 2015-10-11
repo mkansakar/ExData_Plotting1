@@ -1,4 +1,4 @@
-dt <- read.table("./household_power_consumption.txt",header=T,sep=";")
+dt <- read.table("./household_power_consumption.txt",header=T,sep=";", stringsAsFactors=FALSE, dec=".")
 #head(dt)
 dt_filter <- dt[dt$Date %in% c("1/2/2007","2/2/2007"),]
 #head(dt_filter)
